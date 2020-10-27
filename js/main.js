@@ -13,6 +13,18 @@ $(document).ready( function (){
         nextPrevClick(prev);
     })
 
+    //BONUS IMPOSTAZIONE KEYBORD
+    $(document).keydown( function (event){
+        console.log(event.keyCode);
+
+        if(event.keyCode === 37){
+            nextPrevClick(prev);
+        } else if(event.keyCode === 39){
+            nextPrevClick(next);
+        }
+
+    })
+
     //IMPOSTAZIONE FUNZIONE
     function nextPrevClick(direzione){
 
